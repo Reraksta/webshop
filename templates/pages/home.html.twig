@@ -1,0 +1,160 @@
+{% extends "base.html.twig" %}
+
+{% block jumbotron %}
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="top">Очень важная либо красивая инфа только для стартовой страници</h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <header>
+            <h1>Некая информация о сайте, на каждой странице</h1>
+            <p class="lead">Описание информации о сайте ну или просто красивый рисунок на фоне :)</p>
+            <div class="navbar navbar-default submenu">
+                <ul class="nav navbar-nav pull-left submenu-links">
+                    <li><a href="#">Акции</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Классика <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Гостинные</a></li>
+                            <li><a href="#">Спальни</a></li>
+                            <li><a href="#">Люстры</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Модэрн <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Гостинные</a></li>
+                            <li><a href="#">Спальни</a></li>
+                            <li><a href="#">Люстры</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav pull-right submenu-links">
+                    <li><a href="#">Гостинные</a></li>
+                    <li class="active"><a href="#">Диваны</a></li>
+                    <li><a href="#">Детские</a></li>
+                    <li><a href="#">Спальни</a></li>
+                    <li><a href="#">Матрасы</a></li>
+                    <li><a href="#">Люстры</a></li>
+                    <li><a href="#">Другие изделия</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <h3>Акции</h3>
+                <p>Мы постоянно радуем наших клиентов более приятными ценами.</p>
+                <a class="btn btn-warning" href="#">Все скидки</a>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <ul class="thumbnails">
+                    <li class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="view_product.php">
+                                <img src="http://placehold.it/260x180" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>Комод раз</h3>
+                                <p>
+                                    Цена:
+                                    <b>320 LVL</b>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="view_product.php">
+                                <img src="http://placehold.it/260x180" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>Комод два</h3>
+                                <p>
+                                    Цена:
+                                    <b>340 LVL</b>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="view_product.php">
+                                <img src="http://placehold.it/260x180" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>Комод три</h3>
+                                <p>
+                                    Цена:
+                                    <b>230 LVL</b>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <h3>Новинки</h3>
+                <p>Какой нибудь простенький текст про новинки</p>
+                <a class="btn btn-warning" href="#">Все скидки</a>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <ul class="thumbnails">
+                    <li class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="view_product.php">
+                                <img src="http://placehold.it/260x180" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>Комод раз</h3>
+                                <p>
+                                    Цена:
+                                    <b>320 LVL</b>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="view_product.php">
+                                <img src="http://placehold.it/260x180" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>Комод два</h3>
+                                <p>
+                                    Цена:
+                                    <b>340 LVL</b>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="view_product.php">
+                                <img src="http://placehold.it/260x180" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>Комод три</h3>
+                                <p>
+                                    Цена:
+                                    <b>230 LVL</b>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

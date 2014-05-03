@@ -4,8 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block pageTitle %}{% endblock %}</title>
+        <script>
+            less = {
+                env: "development"
+            };
+        </script>
+        <link rel="shortcut icon" href="img/icons/favicon.ico">
+        <link rel="stylesheet/less" type="text/css" href="/css/init.less" />
+        <script src="/js/less-1.7.0.min.js" type="text/javascript"></script>
     </head>
     <body>
-yo
+        {% block header %}
+            {% include 'components/header.html.twig' %}
+        {% endblock %}
+
+        {% block jumbotron %}
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% block footer %}
+            {% include 'components/footer.html.twig' %}
+        {% endblock %}
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/js/jquery-1.11.0.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
     </body>
     <html>

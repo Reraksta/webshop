@@ -17,9 +17,39 @@ $view->parserExtensions = array(
 );
 
 $app->get('/', function () use ($app) {
-    $app->render('base.html.twig', array(
+    $app->render('pages/home.html.twig', array(
         'active'=>'home'
         ));
 })->name('home');
+
+$app->get('/products', function () use ($app) {
+    $app->render('pages/products.html.twig', array(
+        'active'=>'products'
+        ));
+})->name('products');
+
+$app->get('/collections', function () use ($app) {
+    $app->render('pages/collections.html.twig', array(
+        'active'=>'collections'
+        ));
+})->name('collections');
+
+$app->get('/sales', function () use ($app) {
+    $app->render('sales.html.twig', array(
+        'active'=>'sales'
+        ));
+})->name('sales');
+
+$app->get('/about', function () use ($app) {
+    $app->render('about.html.twig', array(
+        'active'=>'about'
+        ));
+})->name('/about');
+
+$app->get('/contacts', function () use ($app) {
+    $app->render('contacts.html.twig', array(
+        'contacts'=>'contacts'
+        ));
+})->name('/contacts');
 
 $app->run();
